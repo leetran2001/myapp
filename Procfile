@@ -1,1 +1,3 @@
-web: bundle exec rails server thin -p $PORT -e $RACK_ENV
+
+bundle exec puma -t 5:5 -p ${PORT:-3000} -e production
+bundle exec rake jobs:work

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <title>Myapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,7 +10,6 @@
   </head>
 
   <body>
-    <div class="container"><%= render "layouts/navigation" %></div>
-    <%= yield %>
+   <h1> <%= @greeting %> </h1>
   </body>
 </html>
